@@ -3,8 +3,8 @@
     "GLUE"
   ],
   "Source": "GLUE",
-  "BaseScreen": "",
-  "BaseElement": "",
+  "BaseScreen": "Screens\\GameScreen",
+  "BaseElement": "Screens\\GameScreen",
   "ReferencedFiles": [
     {
       "Name": "GumProject/Screens/LvlC0Gum.gusx",
@@ -46,43 +46,13 @@
           "Name": "AssociateWithFactory",
           "Value": true,
           "Type": "bool"
-        },
-        {
-          "Name": "CollisionCreationOptions",
-          "Value": 0,
-          "Type": "int"
-        },
-        {
-          "Name": "CollisionTileSize",
-          "Value": 16.0,
-          "Type": "float"
-        },
-        {
-          "Name": "CollisionFillWidth",
-          "Value": 32,
-          "Type": "int"
-        },
-        {
-          "Name": "CollisionFillHeight",
-          "Value": 1,
-          "Type": "int"
-        },
-        {
-          "Name": "InnerSizeWidth",
-          "Value": 800.0,
-          "Type": "float"
-        },
-        {
-          "Name": "InnerSizeHeight",
-          "Value": 600.0,
-          "Type": "float"
         }
       ],
       "InstructionSaves": [
         {
           "Type": "bool",
           "Member": "CreateEntitiesFromTiles",
-          "Value": false,
+          "Value": true,
           "Time": 0.0
         },
         {
@@ -92,28 +62,18 @@
           "Time": 0.0
         },
         {
-          "Type": "string",
-          "Member": "RepositionUpdateStyle",
-          "Value": "Upward",
-          "Time": 0.0
-        },
-        {
-          "Type": "bool",
-          "Member": "Visible",
-          "Value": true,
-          "Time": 0.0
-        },
-        {
           "Type": "float",
           "Member": "Z",
-          "Value": 0.0,
+          "Value": -1.0,
           "Time": 0.0
         }
       ],
       "SourceFile": "Screens/LvlC0/C0.tmx",
       "SourceName": "Entire File (LayeredTileMap)",
       "AttachToContainer": true,
-      "GenerateTimedEmit": true
+      "AddToManagers": false,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true
     },
     {
       "InstanceName": "FrontCollision",
@@ -175,7 +135,8 @@
       "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
       "HasPublicProperty": true,
       "AttachToContainer": true,
-      "GenerateTimedEmit": true
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true
     },
     {
       "InstanceName": "BackCollision",
@@ -236,7 +197,8 @@
       "SourceType": 2,
       "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
       "HasPublicProperty": true,
-      "GenerateTimedEmit": true
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true
     },
     {
       "InstanceName": "PlayerList",
@@ -255,6 +217,8 @@
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
       "ContainedObjects": [
         {
           "InstanceName": "Player1",
@@ -270,13 +234,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 136.0,
+              "Value": 152.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -608.0,
+              "Value": -600.0,
               "Time": 0.0
             }
           ],
@@ -284,7 +248,9 @@
           "SourceFile": "Entities\\Player",
           "ExposedInDerived": true,
           "AttachToContainer": true,
-          "GenerateTimedEmit": true
+          "GenerateTimedEmit": true,
+          "DefinedByBase": true,
+          "InstantiatedByBase": true
         }
       ]
     }
