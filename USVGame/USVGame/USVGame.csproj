@@ -271,6 +271,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Level1Gum</Name>
     </None>
+    <None Include="Content\GumProject\Screens\LvlC0Gum.gusx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>LvlC0Gum</Name>
+    </None>
     <None Include="Content\GumProject\Standards\Circle.gutx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Circle</Name>
@@ -323,6 +327,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Modern_Exteriors_Complete_Tileset</Name>
     </None>
+    <None Include="Content\Screens\LvlC0\C0.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>C0</Name>
+    </None>
+    <None Include="content\screens\lvlc0\Interiour.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Interiour</Name>
+    </None>
+    <None Include="content\screens\lvlc0\Interiour.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Interiour</Name>
+    </None>
     <None Include="content\StandardTileset.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>StandardTileset</Name>
@@ -343,12 +359,12 @@
     <Compile Include="FileAliases.Generated.cs" />
     <Compile Include="Forms\Screens\GameScreenGumForms.Generated.cs" />
     <Compile Include="Forms\Screens\Level1GumForms.Generated.cs" />
+    <Compile Include="Forms\Screens\LvlC0GumForms.Generated.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Game1.Generated.cs">
       <DependentUpon>Game1.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalContent.Generated.cs" />
-    <Compile Include="GlueCommunication\GameConnectionManager.Generated.cs" />
     <Compile Include="GlueControl\CommandReceiver.Generated.cs" />
     <Compile Include="GlueControl\Dtos.Generated.cs" />
     <Compile Include="GlueControl\Editing\CameraLogic.Generated.cs" />
@@ -371,6 +387,7 @@
     <Compile Include="GlueControl\Editing\SelectionLogic.Generated.cs" />
     <Compile Include="GlueControl\Editing\VariableAssignmentLogic.Generated.cs" />
     <Compile Include="GlueControl\Editing\Visuals\Arrow.Generated.cs" />
+    <Compile Include="GlueControl\GameConnectionManager.Generated.cs" />
     <Compile Include="GlueControl\GlueCallsClassGenerationManager.Generated.cs" />
     <Compile Include="GlueControl\GlueControlManager.Generated.cs" />
     <Compile Include="GlueControl\InstanceLogic.Generated.cs" />
@@ -580,6 +597,10 @@
     <Compile Include="GumRuntimes\Level1GumRuntime.Generated.cs">
       <DependentUpon>Level1GumRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\LvlC0GumRuntime.cs" />
+    <Compile Include="GumRuntimes\LvlC0GumRuntime.Generated.cs">
+      <DependentUpon>LvlC0GumRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\NineSliceRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\PolygonRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\RectangleRuntime.Generated.cs" />
@@ -595,6 +616,10 @@
     <Compile Include="Screens\Level1.cs" />
     <Compile Include="Screens\Level1.Generated.cs">
       <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LvlC0.cs" />
+    <Compile Include="Screens\LvlC0.Generated.cs">
+      <DependentUpon>LvlC0.cs</DependentUpon>
     </Compile>
     <Compile Include="Setup\CameraSetup.Generated.cs" />
     <Compile Include="TileCollisions\CollidableListVsTileShapeCollectionRelationship.Generated.cs" />

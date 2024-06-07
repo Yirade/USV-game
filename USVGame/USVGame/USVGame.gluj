@@ -52,7 +52,7 @@
   ],
   "GlobalContentSettingsSave": {},
   "SyncedProjects": [],
-  "StartUpScreen": "Screens\\Level1",
+  "StartUpScreen": "Screens\\LvlC0",
   "ResolutionPresets": [],
   "PerformanceSettingsSave": {},
   "IgnoredDirectories": [],
@@ -92,6 +92,9 @@
     },
     {
       "Name": "Screens\\Level1"
+    },
+    {
+      "Name": "Screens\\LvlC0"
     }
   ],
   "EntityReferences": [
