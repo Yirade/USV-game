@@ -51,8 +51,14 @@
     }
   ],
   "GlobalContentSettingsSave": {},
+  "Properties": [
+    {
+      "Name": "IsOpenVisualStudioAutomaticallyChecked",
+      "Value": false
+    }
+  ],
   "SyncedProjects": [],
-  "StartUpScreen": "Screens\\Level1",
+  "StartUpScreen": "Screens\\LvlCorpAParter",
   "ResolutionPresets": [],
   "PerformanceSettingsSave": {},
   "IgnoredDirectories": [],
@@ -77,7 +83,8 @@
     {
       "Name": "TopDownValues",
       "CsvFilesUsingThis": [
-        "Entities/Player/TopDownValuesStatic.csv"
+        "Entities/Player/TopDownValuesStatic.csv",
+        "Entities/Guard/TopDownValuesStatic.csv"
       ],
       "RequiredProperties": [],
       "GenerateCode": true
@@ -92,9 +99,15 @@
     },
     {
       "Name": "Screens\\Level1"
+    },
+    {
+      "Name": "Screens\\LvlCorpAParter"
     }
   ],
   "EntityReferences": [
+    {
+      "Name": "Entities\\Guard"
+    },
     {
       "Name": "Entities\\Player"
     }

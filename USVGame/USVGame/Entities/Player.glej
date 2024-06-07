@@ -7,16 +7,16 @@
   "Is2D": true,
   "ReferencedFiles": [
     {
-      "Name": "Entities/Player/TopDownAnimations.achx",
-      "IsSharedStatic": true,
-      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
-      "ProjectsToExcludeFrom": []
-    },
-    {
       "Name": "Entities/Player/TopDownValuesStatic.csv",
       "IsSharedStatic": true,
       "HasPublicProperty": true,
       "CreatesDictionary": true,
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Player/PlayerAnims.achx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
       "ProjectsToExcludeFrom": []
     }
   ],
@@ -153,12 +153,6 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "AnimationChainList",
-          "Member": "AnimationChains",
-          "Value": "TopDownAnimations",
-          "Time": 0.0
-        },
-        {
           "Type": "string",
           "Member": "CurrentChainName",
           "Value": "CharacterIdleDown",
@@ -171,18 +165,15 @@
           "Time": 0.0
         },
         {
-          "Type": "float",
-          "Member": "Y",
+          "Type": "bool",
+          "Member": "SetCollisionFromAnimation",
+          "Value": false,
           "Time": 0.0
         },
         {
-          "Type": "float",
-          "Member": "Width",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Height",
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "PlayerAnims",
           "Time": 0.0
         }
       ],
@@ -209,6 +200,12 @@
           "Time": 0.0
         },
         {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
+          "Time": 0.0
+        },
+        {
           "Type": "float",
           "Member": "Width",
           "Value": 14.0,
@@ -218,17 +215,6 @@
           "Type": "float",
           "Member": "Y",
           "Value": 2.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "X",
-          "Time": 0.0
-        },
-        {
-          "Type": "bool",
-          "Member": "Visible",
-          "Value": false,
           "Time": 0.0
         }
       ],
