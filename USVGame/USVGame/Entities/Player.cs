@@ -9,6 +9,7 @@ using FlatRedBall.Graphics.Animation;
 using FlatRedBall.Graphics.Particle;
 using FlatRedBall.Math.Geometry;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace USVGame.Entities
 {
@@ -21,9 +22,20 @@ namespace USVGame.Entities
         /// </summary>
         private void CustomInitialize()
         {
+            //WASD + Arrow movement
+			MovementInput = new Multiple2DInputs().Or(InputManager.Keyboard.Get2DInput(
+				Keys.Left,
+				Keys.Right,
+				Keys.Up,
+				Keys.Down
+			).Or(InputManager.Keyboard.Get2DInput(
+				Keys.A,
+				Keys.D,
+				Keys.W,
+				Keys.S
+			 )));
 
-
-        }
+		}
 
         private void CustomActivity()
         {
