@@ -290,20 +290,7 @@
               "Type": "bool"
             }
           ],
-          "InstructionSaves": [
-            {
-              "Type": "float",
-              "Member": "X",
-              "Value": 232.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "Y",
-              "Value": -536.0,
-              "Time": 0.0
-            }
-          ],
+          "InstructionSaves": [],
           "SourceType": 1,
           "AttachToContainer": true,
           "GenerateTimedEmit": true
