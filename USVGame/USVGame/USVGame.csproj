@@ -275,9 +275,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>GameScreenGum</Name>
     </None>
-    <None Include="Content\GumProject\Screens\Level1Gum.gusx">
+    <None Include="Content\GumProject\Screens\LvlC0Gum.gusx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Level1Gum</Name>
+      <Name>LvlC0Gum</Name>
     </None>
     <None Include="Content\GumProject\Standards\Circle.gutx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -319,6 +319,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>UISpriteSheet</Name>
     </None>
+    <None Include="Content\Screens\Level1\CorpAParter_1.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>CorpAParter_1</Name>
+    </None>
     <None Include="content\screens\level1\exterior.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>exterior</Name>
@@ -330,10 +334,6 @@
     <None Include="content\screens\level1\interior_extra.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>interior_extra</Name>
-    </None>
-    <None Include="Content\Screens\Level1\Level1Map.tmx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Level1Map</Name>
     </None>
     <None Include="content\screens\level1\modern1.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -354,6 +354,18 @@
     <None Include="content\screens\level1\office.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>office</Name>
+    </None>
+    <None Include="Content\Screens\LvlC0\C0.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>C0</Name>
+    </None>
+    <None Include="content\screens\lvlc0\Interiour.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Interiour</Name>
+    </None>
+    <None Include="content\screens\lvlc0\Interiour.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Interiour</Name>
     </None>
     <None Include="content\StandardTileset.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -378,8 +390,9 @@
     <Compile Include="Factories\GuardFactory.Generated.cs" />
     <Compile Include="Factories\PlayerFactory.Generated.cs" />
     <Compile Include="FileAliases.Generated.cs" />
+    <Compile Include="Forms\Screens\A1_ParterGumForms.Generated.cs" />
     <Compile Include="Forms\Screens\GameScreenGumForms.Generated.cs" />
-    <Compile Include="Forms\Screens\Level1GumForms.Generated.cs" />
+    <Compile Include="Forms\Screens\LvlC0GumForms.Generated.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Game1.Generated.cs">
       <DependentUpon>Game1.cs</DependentUpon>
@@ -425,6 +438,10 @@
     <Compile Include="GlueControl\Models\StateSaveCategory.Generated.cs" />
     <Compile Include="GlueControl\Runtime\DynamicEntity.Generated.cs" />
     <Compile Include="GlueControl\Screens\EntityViewingScreen.Generated.cs" />
+    <Compile Include="GumRuntimes\A1_ParterGumRuntime.cs" />
+    <Compile Include="GumRuntimes\A1_ParterGumRuntime.Generated.cs">
+      <DependentUpon>A1_ParterGumRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\Behaviors\IButtonBehavior.Generated.cs" />
     <Compile Include="GumRuntimes\Behaviors\ICheckBoxBehavior.Generated.cs" />
     <Compile Include="GumRuntimes\Behaviors\IComboBoxBehavior.Generated.cs" />
@@ -613,9 +630,9 @@
       <DependentUpon>GameScreenGumRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\GumIdb.Generated.cs" />
-    <Compile Include="GumRuntimes\Level1GumRuntime.cs" />
-    <Compile Include="GumRuntimes\Level1GumRuntime.Generated.cs">
-      <DependentUpon>Level1GumRuntime.cs</DependentUpon>
+    <Compile Include="GumRuntimes\LvlC0GumRuntime.cs" />
+    <Compile Include="GumRuntimes\LvlC0GumRuntime.Generated.cs">
+      <DependentUpon>LvlC0GumRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\NineSliceRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\PolygonRuntime.Generated.cs" />
@@ -625,13 +642,17 @@
     <Compile Include="Performance\IEntityFactory.Generated.cs" />
     <Compile Include="Performance\PoolList.Generated.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Screens\A1_Parter.cs" />
+    <Compile Include="Screens\A1_Parter.Generated.cs">
+      <DependentUpon>A1_Parter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\GameScreen.cs" />
     <Compile Include="Screens\GameScreen.Generated.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Level1.cs" />
-    <Compile Include="Screens\Level1.Generated.cs">
-      <DependentUpon>Level1.cs</DependentUpon>
+    <Compile Include="Screens\LvlC0.cs" />
+    <Compile Include="Screens\LvlC0.Generated.cs">
+      <DependentUpon>LvlC0.cs</DependentUpon>
     </Compile>
     <Compile Include="Setup\CameraSetup.Generated.cs" />
     <Compile Include="TileCollisions\CollidableListVsTileShapeCollectionRelationship.Generated.cs" />

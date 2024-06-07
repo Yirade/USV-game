@@ -9,6 +9,12 @@
       "IsSharedStatic": true,
       "RuntimeType": "USVGame.GumRuntimes.GameScreenGumRuntime",
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/LvlC0/C0.tmx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.TileGraphics.LayeredTileMap",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "CustomVariables": [
@@ -122,10 +128,11 @@
           "Time": 0.0
         }
       ],
-      "SourceType": 2,
-      "SourceFile": "FlatRedBall.TileGraphics.LayeredTileMap",
+      "SourceFile": "Screens/LvlC0/C0.tmx",
+      "SourceName": "Entire File (LayeredTileMap)",
       "SetByDerived": true,
       "AttachToContainer": true,
+      "AddToManagers": false,
       "GenerateTimedEmit": true
     },
     {

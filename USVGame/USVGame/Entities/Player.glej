@@ -153,15 +153,15 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "string",
-          "Member": "CurrentChainName",
-          "Value": "CharacterIdleDown",
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "PlayerAnims",
           "Time": 0.0
         },
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
+          "Type": "string",
+          "Member": "CurrentChainName",
+          "Value": "CharacterIdleDown",
           "Time": 0.0
         },
         {
@@ -171,9 +171,9 @@
           "Time": 0.0
         },
         {
-          "Type": "AnimationChainList",
-          "Member": "AnimationChains",
-          "Value": "PlayerAnims",
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         }
       ],
