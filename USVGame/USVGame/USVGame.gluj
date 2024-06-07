@@ -58,7 +58,7 @@
     }
   ],
   "SyncedProjects": [],
-  "StartUpScreen": "Screens\\LvlCorpAParter",
+  "StartUpScreen": "Screens\\Level1",
   "ResolutionPresets": [],
   "PerformanceSettingsSave": {},
   "IgnoredDirectories": [],
@@ -99,9 +99,6 @@
     },
     {
       "Name": "Screens\\Level1"
-    },
-    {
-      "Name": "Screens\\LvlCorpAParter"
     }
   ],
   "EntityReferences": [
