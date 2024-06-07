@@ -7,20 +7,20 @@
   "Is2D": true,
   "ReferencedFiles": [
     {
-      "Name": "Entities/Player/TopDownValuesStatic.csv",
+      "Name": "Entities/Guard/TopDownValuesStatic.csv",
       "IsSharedStatic": true,
       "HasPublicProperty": true,
       "CreatesDictionary": true,
       "ProjectsToExcludeFrom": []
     },
     {
-      "Name": "Entities/Player/PlayerAnims.achx",
+      "Name": "Entities/Guard/GuardAnim.achx",
       "IsSharedStatic": true,
       "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
       "ProjectsToExcludeFrom": []
     },
     {
-      "Name": "Entities/Player/MainPlayer.png",
+      "Name": "Entities/Guard/Guard1.png",
       "IsSharedStatic": true,
       "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
       "ProjectsToExcludeFrom": []
@@ -74,31 +74,8 @@
         }
       ],
       "Name": "TeamIndex",
-      "DefaultValue": 0,
+      "DefaultValue": 1,
       "SetByDerived": true
-    },
-    {
-      "Properties": [
-        {
-          "Name": "Type",
-          "Value": "decimal",
-          "Type": "String"
-        },
-        {
-          "Name": "CreatesProperties",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "Category",
-          "Value": "Damageable",
-          "Type": "String"
-        }
-      ],
-      "Name": "MaxHealth",
-      "DefaultValue": 100.0,
-      "SetByDerived": true,
-      "Category": "Damageable"
     },
     {
       "Properties": [
@@ -114,14 +91,38 @@
         },
         {
           "Name": "Category",
-          "Value": "Damageable",
+          "Value": "Damage Dealing",
           "Type": "String"
         }
       ],
-      "Name": "InvulnerabilityTimeAfterDamage",
+      "Name": "SecondsBetweenDamage",
       "DefaultValue": 0.0,
       "SetByDerived": true,
-      "Category": "Damageable"
+      "Summary": "The number of seconds between dealing damage to the same object. 0 means every frame.",
+      "Category": "Damage Dealing"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "decimal",
+          "Type": "String"
+        },
+        {
+          "Name": "CreatesProperties",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "Category",
+          "Value": "Damage Dealing",
+          "Type": "String"
+        }
+      ],
+      "Name": "DamageToDeal",
+      "DefaultValue": 10.0,
+      "SetByDerived": true,
+      "Category": "Damage Dealing"
     }
   ],
   "Properties": [
@@ -131,7 +132,7 @@
       "Type": "bool"
     },
     {
-      "Name": "ImplementsIDamageable",
+      "Name": "ImplementsIDamageArea",
       "Value": true,
       "Type": "bool"
     },
@@ -159,27 +160,27 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "string",
-          "Member": "CurrentChainName",
-          "Value": "CharacterIdleDown",
-          "Time": 0.0
-        },
-        {
           "Type": "float",
           "Member": "TextureScale",
-          "Value": 0.6571422,
+          "Value": 1.0,
           "Time": 0.0
         },
         {
           "Type": "Texture2D",
           "Member": "Texture",
-          "Value": "MainPlayer",
+          "Value": "Guard1",
           "Time": 0.0
         },
         {
           "Type": "AnimationChainList",
           "Member": "AnimationChains",
-          "Value": "PlayerAnims",
+          "Value": "GuardAnim",
+          "Time": 0.0
+        },
+        {
+          "Type": "string",
+          "Member": "CurrentChainName",
+          "Value": "CharacterIdleDown",
           "Time": 0.0
         },
         {
@@ -207,26 +208,14 @@
       "InstructionSaves": [
         {
           "Type": "float",
-          "Member": "Height",
-          "Value": 10.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "bool",
-          "Member": "Visible",
-          "Value": true,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
           "Member": "Width",
-          "Value": 14.0,
+          "Value": 32.0,
           "Time": 0.0
         },
         {
           "Type": "float",
-          "Member": "Y",
-          "Value": -10.0,
+          "Member": "Height",
+          "Value": 32.0,
           "Time": 0.0
         }
       ],
@@ -237,6 +226,6 @@
       "GenerateTimedEmit": true
     }
   ],
-  "Name": "Entities\\Player",
+  "Name": "Entities\\Guard",
   "CustomClassesForExport": []
 }

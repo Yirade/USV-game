@@ -234,13 +234,19 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 152.0,
+              "Value": 144.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
               "Value": -600.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": 2.0,
               "Time": 0.0
             }
           ],
@@ -251,6 +257,56 @@
           "GenerateTimedEmit": true,
           "DefinedByBase": true,
           "InstantiatedByBase": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "GuardList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\Guard",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "Guard1",
+          "SourceClassType": "Entities\\Guard",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 232.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -536.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
         }
       ]
     }

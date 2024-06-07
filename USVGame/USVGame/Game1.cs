@@ -54,6 +54,8 @@ namespace USVGame
 
             GeneratedInitialize();
 
+            
+
             base.Initialize();
         }
 

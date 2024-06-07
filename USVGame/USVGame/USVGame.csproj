@@ -19,13 +19,33 @@
     <None Remove="**\*.glsj" />
     <None Remove="**\*.glej" />
     <None Remove="**\*.gluj" />
+    <None Include="Content\Entities\Guard\guard1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>guard1</Name>
+    </None>
+    <None Include="Content\Entities\Guard\GuardAnim.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>GuardAnim</Name>
+    </None>
+    <None Include="Content\Entities\Guard\mainplayer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>mainplayer</Name>
+    </None>
+    <None Include="Content\Entities\Guard\TopDownValuesStatic.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>TopDownValuesStatic</Name>
+    </None>
     <None Include="Content\Entities\Player\FRBeefcakeSpritesheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>FRBeefcakeSpritesheet</Name>
     </None>
-    <None Include="Content\Entities\Player\TopDownAnimations.achx">
+    <None Include="Content\Entities\Player\mainplayer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>TopDownAnimations</Name>
+      <Name>mainplayer</Name>
+    </None>
+    <None Include="Content\Entities\Player\PlayerAnims.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>PlayerAnims</Name>
     </None>
     <None Include="Content\Entities\Player\TopDownValuesStatic.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -351,10 +371,15 @@
   <ItemGroup>
     <Compile Include="DataTypes\TileMapInfo.Generated.cs" />
     <Compile Include="DataTypes\TopDownValues.Generated.cs" />
+    <Compile Include="Entities\Guard.cs" />
+    <Compile Include="Entities\Guard.Generated.cs">
+      <DependentUpon>Guard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Entities\Player.Generated.cs">
       <DependentUpon>Player.cs</DependentUpon>
     </Compile>
+    <Compile Include="Factories\GuardFactory.Generated.cs" />
     <Compile Include="Factories\PlayerFactory.Generated.cs" />
     <Compile Include="FileAliases.Generated.cs" />
     <Compile Include="Forms\Screens\GameScreenGumForms.Generated.cs" />
