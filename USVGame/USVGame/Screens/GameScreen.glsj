@@ -522,7 +522,7 @@
         },
         {
           "Name": "EliminateCutCorners",
-          "Value": true,
+          "Value": false,
           "Type": "bool"
         }
       ],
@@ -530,7 +530,7 @@
         {
           "Type": "bool",
           "Member": "Visible",
-          "Value": true,
+          "Value": false,
           "Time": 0.0
         }
       ],
