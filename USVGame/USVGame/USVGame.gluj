@@ -51,6 +51,12 @@
     }
   ],
   "GlobalContentSettingsSave": {},
+  "Properties": [
+    {
+      "Name": "IsOpenVisualStudioAutomaticallyChecked",
+      "Value": false
+    }
+  ],
   "SyncedProjects": [],
   "StartUpScreen": "Screens\\LvlC0",
   "ResolutionPresets": [],
@@ -90,9 +96,6 @@
   "ScreenReferences": [
     {
       "Name": "Screens\\GameScreen"
-    },
-    {
-      "Name": "Screens\\Level1"
     },
     {
       "Name": "Screens\\LvlC0"

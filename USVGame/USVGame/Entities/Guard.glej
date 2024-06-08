@@ -12,18 +12,6 @@
       "HasPublicProperty": true,
       "CreatesDictionary": true,
       "ProjectsToExcludeFrom": []
-    },
-    {
-      "Name": "Entities/Guard/GuardAnim.achx",
-      "IsSharedStatic": true,
-      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
-      "ProjectsToExcludeFrom": []
-    },
-    {
-      "Name": "Entities/Guard/Guard1.png",
-      "IsSharedStatic": true,
-      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
-      "ProjectsToExcludeFrom": []
     }
   ],
   "CustomVariables": [
@@ -138,7 +126,7 @@
     },
     {
       "Name": "InputDevice",
-      "Value": 2,
+      "Value": 0,
       "Type": "int"
     },
     {
@@ -160,39 +148,9 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "AnimationChainList",
-          "Member": "AnimationChains",
-          "Value": "GuardAnim",
-          "Time": 0.0
-        },
-        {
-          "Type": "string",
-          "Member": "CurrentChainName",
-          "Value": "CharacterIdleDown",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Red",
-          "Value": 0.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "Texture2D",
-          "Member": "Texture",
-          "Value": "Guard1",
-          "Time": 0.0
-        },
-        {
           "Type": "float",
           "Member": "TextureScale",
-          "Value": 0.6571422,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Y",
-          "Value": 0.0,
+          "Value": 1.0,
           "Time": 0.0
         }
       ],
@@ -215,19 +173,13 @@
         {
           "Type": "float",
           "Member": "Height",
-          "Value": 10.0,
+          "Value": 32.0,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Width",
-          "Value": 14.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Y",
-          "Value": -10.0,
+          "Value": 32.0,
           "Time": 0.0
         }
       ],
