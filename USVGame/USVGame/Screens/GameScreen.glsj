@@ -472,6 +472,84 @@
       "HasPublicProperty": true,
       "SetByDerived": true,
       "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "WalkingNodeNetwork",
+      "SourceClassType": "FlatRedBall.AI.Pathfinding.TileNodeNetwork",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "NetworkCreationOptions",
+          "Value": 3,
+          "Type": "int"
+        },
+        {
+          "Name": "NodeNetworkTileSize",
+          "Value": 16.0,
+          "Type": "float"
+        },
+        {
+          "Name": "NodeNetworkFillWidth",
+          "Value": 32,
+          "Type": "int"
+        },
+        {
+          "Name": "NodeNetworkFillHeight",
+          "Value": 32,
+          "Type": "int"
+        },
+        {
+          "Name": "SourceTmxName",
+          "Value": "Map",
+          "Type": "String"
+        },
+        {
+          "Name": "NodeNetworkTileTypeName",
+          "Value": "WalkableTile",
+          "Type": "String"
+        },
+        {
+          "Name": "NodeNetworkLayerName",
+          "Value": "ground",
+          "Type": "String"
+        },
+        {
+          "Name": "TileNodeNetworkFromLayerOptions",
+          "Value": 0,
+          "Type": "int"
+        },
+        {
+          "Name": "NodeNetworkLayerTileType",
+          "Value": "WalkableTile",
+          "Type": "String"
+        },
+        {
+          "Name": "EliminateCutCorners",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "DirectionalType",
+          "Value": 0,
+          "Type": "int"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": true,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "TileNodeNetwork",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
     }
   ],
   "Name": "Screens\\GameScreen",

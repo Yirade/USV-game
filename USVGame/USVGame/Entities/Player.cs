@@ -13,20 +13,16 @@ using Microsoft.Xna.Framework.Input;
 
 namespace USVGame.Entities
 {
-	public partial class Player
-	{
-		/// <summary>
-		/// Initialization logic which is executed only one time for this Entity (unless the Entity is pooled).
-		/// This method is called when the Entity is added to managers. Entities which are instantiated but not
-		/// added to managers will not have this method called.
-		/// </summary>
-		private void CustomInitialize()
-		{
-			
-		}
-
-		partial void CustomInitializeTopDownInput()
-		{
+    public partial class Player
+    {
+        /// <summary>
+        /// Initialization logic which is executed only one time for this Entity (unless the Entity is pooled).
+        /// This method is called when the Entity is added to managers. Entities which are instantiated but not
+        /// added to managers will not have this method called.
+        /// </summary>
+        private void CustomInitialize()
+        {
+            //WASD + Arrow movement
 			MovementInput = new Multiple2DInputs().Or(InputManager.Keyboard.Get2DInput(
 				Keys.Left,
 				Keys.Right,
@@ -38,21 +34,25 @@ namespace USVGame.Entities
 				Keys.W,
 				Keys.S
 			 )));
+
 		}
 
-		private void CustomActivity()
-		{
-			
-		}
+        private void CustomActivity()
+        {
 
-		private void CustomDestroy()
-		{
-			
-		}
 
-		private static void CustomLoadStaticContent(string contentManagerName)
-		{
-			
-		}
-	}
+        }
+
+        private void CustomDestroy()
+        {
+
+
+        }
+
+        private static void CustomLoadStaticContent(string contentManagerName)
+        {
+
+
+        }
+    }
 }
