@@ -522,8 +522,13 @@
         },
         {
           "Name": "EliminateCutCorners",
-          "Value": false,
+          "Value": true,
           "Type": "bool"
+        },
+        {
+          "Name": "DirectionalType",
+          "Value": 0,
+          "Type": "int"
         }
       ],
       "InstructionSaves": [
