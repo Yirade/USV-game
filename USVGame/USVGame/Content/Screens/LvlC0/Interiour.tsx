@@ -149,6 +149,11 @@
    <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
+ <tile id="10374" type="WalkableTile"/>
+ <tile id="10375" type="WalkableTile"/>
+ <tile id="10376" type="WalkableTile"/>
+ <tile id="10377" type="WalkableTile"/>
+ <tile id="10409" type="WalkableTile"/>
  <tile id="30029" type="WalkableTile"/>
  <tile id="30378">
   <objectgroup draworder="index" id="2">
