@@ -92,9 +92,6 @@
       "Name": "Screens\\GameScreen"
     },
     {
-      "Name": "Screens\\Level1"
-    },
-    {
       "Name": "Screens\\LvlC0"
     }
   ],

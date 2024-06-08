@@ -287,10 +287,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>GameScreenGum</Name>
     </None>
-    <None Include="Content\GumProject\Screens\Level1Gum.gusx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Level1Gum</Name>
-    </None>
     <None Include="Content\GumProject\Screens\LvlC0Gum.gusx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>LvlC0Gum</Name>
@@ -334,18 +330,6 @@
     <None Include="Content\GumProject\UISpriteSheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>UISpriteSheet</Name>
-    </None>
-    <None Include="content\screens\level1\exterior.tsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>exterior</Name>
-    </None>
-    <None Include="Content\Screens\Level1\Level1Map.tmx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Level1Map</Name>
-    </None>
-    <None Include="content\screens\level1\Modern_Exteriors_Complete_Tileset.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Modern_Exteriors_Complete_Tileset</Name>
     </None>
     <None Include="Content\Screens\LvlC0\C0.tmx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -637,10 +621,6 @@
     <Compile Include="Screens\GameScreen.cs" />
     <Compile Include="Screens\GameScreen.Generated.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Level1.cs" />
-    <Compile Include="Screens\Level1.Generated.cs">
-      <DependentUpon>Level1.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\LvlC0.cs" />
     <Compile Include="Screens\LvlC0.Generated.cs">
