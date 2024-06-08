@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="38" height="41" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
  <tileset firstgid="1" source="Interiour.tsx"/>
- <layer id="1" name="ground" width="38" height="41">
+ <layer id="1" name="ground" class="WalkableTile" width="38" height="41">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,190,190,190,190,190,0,0,0,0,190,190,190,190,2684388162,2684388162,2684388162,2684388162,30380,30380,30380,30380,0,0,0,0,0,0,0,0,0,0,

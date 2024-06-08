@@ -138,7 +138,7 @@
     },
     {
       "Name": "InputDevice",
-      "Value": 0,
+      "Value": 2,
       "Type": "int"
     },
     {
@@ -160,15 +160,9 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "Texture2D",
-          "Member": "Texture",
-          "Value": "Guard1",
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "GuardAnim",
           "Time": 0.0
         },
         {
@@ -179,19 +173,25 @@
         },
         {
           "Type": "float",
-          "Member": "Y",
+          "Member": "Red",
           "Value": 0.0,
           "Time": 0.0
         },
         {
-          "Type": "AnimationChainList",
-          "Member": "AnimationChains",
-          "Value": "GuardAnim",
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "Guard1",
           "Time": 0.0
         },
         {
           "Type": "float",
-          "Member": "Red",
+          "Member": "TextureScale",
+          "Value": 0.6571422,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
           "Value": 0.0,
           "Time": 0.0
         }
@@ -214,14 +214,20 @@
       "InstructionSaves": [
         {
           "Type": "float",
-          "Member": "Width",
-          "Value": 32.0,
+          "Member": "Height",
+          "Value": 10.0,
           "Time": 0.0
         },
         {
           "Type": "float",
-          "Member": "Height",
-          "Value": 32.0,
+          "Member": "Width",
+          "Value": 14.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -10.0,
           "Time": 0.0
         }
       ],
