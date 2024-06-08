@@ -28,7 +28,7 @@ namespace USVGame.Entities
 
 			// This helps us visualize the path the EnemyBase takes to get to
 			// the player
-			//topDownAiInput.IsPathVisible = true;
+			topDownAiInput.IsPathVisible = true;
 			// Use a darker color so it stands out over the bright level tiles
 			//topDownAiInput.PathColor = Color.Purple;
 			this.InitializeTopDownInput(topDownAiInput);
